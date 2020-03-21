@@ -1,0 +1,128 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Conjuros",
+				"abbreviation": "CJ",
+				"full": "Lista de Conjuros",
+				"authors": [
+					"Cdr"
+				],
+				"convertedBy": [
+					"Cdr"
+				],
+				"version": "1.0.0",
+				"targetSchema": "1.2.3"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0
+	},
+	"spell": [
+		{
+				"name": "Bendición",
+				"source": "PHB",
+				"page": 219,
+				"srd": true,
+				"level": 1,
+				"school": "E",
+				"time": [
+					{
+						"number": 1,
+						"unit": "action"
+					}
+				],
+				"range": {
+					"type": "point",
+					"distance": {
+						"type": "feet",
+						"amount": 30
+					}
+				},
+				"components": {
+					"v": true,
+					"s": true,
+					"m": "unas gotas de agua bendita"
+				},
+				"duration": [
+					{
+						"type": "timed",
+						"duration": {
+							"type": "minute",
+							"amount": 1
+						},
+						"concentration": true
+					}
+				],
+				"entries": [
+					"Bendices hasta tres criaturas de tu elección dentro del alcance. Hasta el final de la duración del conjuro, cuando uno de los objetivos haga una lirada de ataque o una tirada de salvación, puede tirar {@dice d4} y añadir el resultado a esa tirada."
+				],
+				"entriesHigherLevel": [
+					{
+						"type": "entries",
+						"name": "A niveles superiores",
+						"entries": [
+							"Cuando lanzas este conjuro utilizando un espacio de conjuro de nivel 2 o más, puedes elegir como objetivo a una criatura adicional por cada nivel por encima de 1 que tenga el espacio que hayas empleado."
+						]
+					}
+				],
+				"areaTags": [
+					"MT"
+				],
+				"classes": {
+					"fromClassList": [
+						{
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						{
+							"name": "Paladin",
+							"source": "PHB"
+						}
+					],
+					"fromSubclass": [
+						{
+							"class": {
+								"name": "Cleric",
+								"source": "PHB"
+							},
+							"subclass": {
+								"name": "Life",
+								"source": "PHB"
+							}
+						},
+						{
+							"class": {
+								"name": "Cleric",
+								"source": "PHB"
+							},
+							"subclass": {
+								"name": "Solidarity (PSA)",
+								"source": "PSA"
+							}
+						},
+						{
+							"class": {
+								"name": "Sorcerer",
+								"source": "PHB"
+							},
+							"subclass": {
+								"name": "Divine Soul",
+								"source": "XGE"
+							}
+						},
+						{
+							"class": {
+								"name": "Wizard",
+								"source": "PHB"
+							},
+							"subclass": {
+								"name": "Onomancy (UA)",
+								"source": "UAClericDruidWizard"
+							}
+						}
+					]
+				}
+			}
+	]
+}
