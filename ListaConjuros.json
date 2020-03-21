@@ -123,6 +123,130 @@
 						}
 					]
 				}
+			},
+			{
+			"name": "Curar Heridas",
+			"source": "PHB",
+			"page": 230,
+			"srd": true,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Una criatura que tocas recupera un número de Puntos de Golpe igual a {@dice 1d8} + tu modificador de característica para lanzar conjuros. Este conjuro no tiene efecto sobre muertos vivientes o autómatas."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"A niveles superiores. Cuando lanzas este hechizo usando un espacio de conjuros de nivel 2 o superior, la curación se incrementa en {@scaledice 1d8|1-9|1d8} por cada nivel de espacio de conjuros por encima de nivel 1."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "UAArtificer"
+					},
+					{
+						"name": "Artificer (Revisited)",
+						"source": "UAArtificerRevisited"
+					},
+					{
+						"name": "Artificer",
+						"source": "ERLW"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Cleric",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Life",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Celestial (UA)",
+							"source": "UARevisedClassOptions"
+						}
+					},
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Celestial",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
 			}
 	]
 }
